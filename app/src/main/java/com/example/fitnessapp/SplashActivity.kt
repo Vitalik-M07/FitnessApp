@@ -24,4 +24,9 @@ class SplashActivity : AppCompatActivity() {
 
         }.start()
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        timer.cancel()
+    }
 }
